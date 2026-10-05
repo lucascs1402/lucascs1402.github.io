@@ -1,1 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lucas Costa | Contatos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Cabeçalho */
+
+        .perfil {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .foto {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(135deg, #2563eb, #06b6d4);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 42px;
+            font-weight: bold;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        .perfil h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .perfil p {
+            color: #cbd5e1;
+            font-size: 16px;
+        }
+
+        /* Lista */
+
+        .contatos {
+            list-style: none;
+        }
+
+        .contato {
+            background: rgba(255, 255, 255, 0.08);
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+
+            border-radius: 16px;
+
+            padding: 18px 20px;
+
+            margin-bottom: 15px;
+
+            display: flex;
+            align-items: center;
+
+            transition: 0.3s;
+
+            backdrop-filter: blur(10px);
+        }
+
+        .contato:hover {
+            transform: translateY(-4px);
+
+            background: rgba(255, 255, 255, 0.13);
+
+            border-color: rgba(59, 130, 246, 0.6);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .icone {
+            width: 50px;
+            height: 50px;
+
+            border-radius: 12px;
+
+            background: #2563eb;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 23px;
+
+            margin-right: 15px;
+
+            flex-shrink: 0;
+        }
+
+        .informacao {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .informacao strong {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        .informacao a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            word-break: break-word;
+        }
+
+        .informacao a:hover {
+            color: #38bdf8;
+        }
+
+        /* Rodapé */
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+
+            color: #64748b;
+
+            font-size: 13px;
+        }
+
+        /* Celular */
+
+        @media (max-width: 500px) {
+
+            body {
+                padding: 30px 15px;
+            }
+
+            .perfil h1 {
+                font-size: 27px;
+            }
+
+            .contato {
+                padding: 15px;
+            }
+
+            .icone {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+
+            .informacao a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Perfil -->
+
+        <section class="perfil">
+
+            <div class="foto">
+                LC
+            </div>
+
+            <h1>Lucas Costa</h1>
+
+            <p>Meus contatos e redes sociais</p>
+
+        </section>
+
+
+        <!-- Contatos -->
+
+        <ul class="contatos">
+
+            <!-- Telefone -->
+
+            <li class="contato">
+
+                <div class="icone">
+                    📞
+                </div>
+
+                <div class="informacao">
+
+                    <strong>Telefone</strong>
+
+                    <a href="tel:+5574999260558">
+                        (74) 99926-0558
+                    </a>
+
+                </div>
+
+            </li>
+
+
+            <!-- WhatsApp -->
+
+            <li class="contato">
+
+                <div class="icone">
+                    💬
+                </div>
+
+                <div class="informacao">
+
+                    <strong>WhatsApp</strong>
+
+                    <a href="https://wa.me/qr/6WVG5GP3OCYPO1"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        Falar comigo pelo WhatsApp
+
+                    </a>
+
+                </div>
+
+            </li>
+
+
+            <!-- Instagram -->
+
+            <li class="contato">
+
+                <div class="icone">
+                    📷
+                </div>
+
+                <div class="informacao">
+
+                    <strong>Instagram</strong>
+
+                    <a href="https://www.instagram.com/lucascosta051/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        @lucascosta051
+
+                    </a>
+
+                </div>
+
+            </li>
+
+
+            <!-- Email -->
+
+            <li class="contato">
+
+                <div class="icone">
+                    ✉️
+                </div>
+
+                <div class="informacao">
+
+                    <strong>E-mail</strong>
+
+                    <a href="mailto:lucasctt140295@gmail.com">
+
+                        lucasctt140295@gmail.com
+
+                    </a>
+
+                </div>
+
+            </li>
+
+
+            <!-- YouTube -->
+
+            <li class="contato">
+
+                <div class="icone">
+                    ▶️
+                </div>
+
+                <div class="informacao">
+
+                    <strong>YouTube</strong>
+
+                    <a href="https://www.youtube.com/@lucascosta5265"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        Visitar meu canal
+
+                    </a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+
+        <footer>
+
+            © 2026 Lucas Costa • Todos os direitos reservados
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
